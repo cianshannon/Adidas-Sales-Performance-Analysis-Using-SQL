@@ -15,7 +15,7 @@ The dataset was acquired from Kaggle 'https://www.kaggle.com/datasets/vishwas199
 
 ## Dataset Cleaning
 
-The 'Adidas_Sales_Data.csv' was cleaned as mentioned using Python through Juypter Notebook. Below is the step-by-step cleaning process:
+The `Adidas_Sales_Data.csv` was cleaned as mentioned using Python through Juypter Notebook. Below is the step-by-step cleaning process:
 
 - The file was imported to Juypter using pandas.
 - I renamed the columns to remove space and make words more concise.
@@ -25,13 +25,13 @@ The 'Adidas_Sales_Data.csv' was cleaned as mentioned using Python through Juypte
 
 ## SQL Setup
 
-A database 'Adidas_Sales_Data' was created on pgAdmin 4 to conduct the SQL queries.
+A database `Adidas_Sales_Data` was created on pgAdmin 4 to conduct the SQL queries.
 
 ## SQL Table
 
 Below is the code for the SQL Table 'Sales'
-
-`CREATE SEQUENCE sales_id_seq START WITH 1;
+'''
+CREATE SEQUENCE sales_id_seq START WITH 1;
 
 CREATE TABLE Sales (
     SalesID INT PRIMARY KEY DEFAULT nextval('sales_id_seq'),
@@ -49,9 +49,10 @@ CREATE TABLE Sales (
     OperatingProfit NUMERIC,
     OperatingMargin NUMERIC,
     SalesMethod VARCHAR(100)
-);`
+);
+'''
 
-Created a sequence 'sales_id_seq' in order to import the data from the CSV file after creating a new column 'SalesID' to include a 'PRIMARY KEY'.
+Created a sequence `sales_id_seq` in order to import the data from the CSV file after creating a new column 'SalesID' to include a 'PRIMARY KEY'.
 
 ## How to Use
 
