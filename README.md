@@ -31,7 +31,6 @@ A database `Adidas_Sales_Data` was created on pgAdmin 4 to conduct the SQL queri
 
 Below is the code for the SQL Table 'Sales'
 
-'''sql
 CREATE SEQUENCE sales_id_seq START WITH 1;
 
 CREATE TABLE Sales (
