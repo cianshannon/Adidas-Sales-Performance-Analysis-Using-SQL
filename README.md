@@ -65,3 +65,12 @@ Before running the scripts, make sure you have the following installed:
 
 Clone or download the files and run the scripts on their respective programs.
 
+## Queries
+
+Conducted queries to find generic information about the sales data such as Total Sales, Total Profit, and Average Price Per Unit.
+
+Another analysis included Sale Trends Over Time, Top Performing Regions, Sales Performance by Retailers, Profitability Analysis etc.
+
+## Findings
+
+These queries provide beneficial information for Adidas stakeholders looking to see how sales in the company are performing. With these queries, the Top-Selling Product Category has been identified, the Top-Selling Region, and the Top-Selling Retailer. More descriptive information such as Product Profitability, Sale Trends, and Gender Preferences are detailed too, aiding Adidas in future decisions
