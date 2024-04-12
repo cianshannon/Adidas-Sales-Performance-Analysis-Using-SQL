@@ -11,7 +11,7 @@ The dataset was acquired from Kaggle 'https://www.kaggle.com/datasets/vishwas199
 
 `Adidas_Sales_Data.sql`: SQL queries file.
 
-'Adidas_Sales_Data.csv': The raw CSV file containing the database acquired from Kaggle.
+`Adidas_Sales_Data.csv` The raw CSV file containing the database acquired from Kaggle.
 
 ## Dataset Cleaning
 
@@ -31,7 +31,7 @@ A database 'Adidas_Sales_Data' was created on pgAdmin 4 to conduct the SQL queri
 
 Below is the code for the SQL Table 'Sales'
 
-CREATE SEQUENCE sales_id_seq START WITH 1;
+`CREATE SEQUENCE sales_id_seq START WITH 1;
 
 CREATE TABLE Sales (
     SalesID INT PRIMARY KEY DEFAULT nextval('sales_id_seq'),
@@ -49,7 +49,7 @@ CREATE TABLE Sales (
     OperatingProfit NUMERIC,
     OperatingMargin NUMERIC,
     SalesMethod VARCHAR(100)
-);
+);`
 
 Created a sequence 'sales_id_seq' in order to import the data from the CSV file after creating a new column 'SalesID' to include a 'PRIMARY KEY'.
 
