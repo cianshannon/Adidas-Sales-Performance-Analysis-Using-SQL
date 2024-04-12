@@ -28,37 +28,55 @@ CSV HEADER;
 
 -- SQL Queries --
 
-/* 1. Total Sales by Product Category */
+/* 1. Calculate Total Sales */
+SELECT SUM(TotalSales) AS Total_Sales FROM Sales;
+
+/* 2. Calculate Total Profit */
+SELECT SUM(OperatingProfit) AS Total_Profit FROM Sales;
+
+/* 3. Calculate Average Price per Unit */
+SELECT AVG(PricePerUnit) AS Average_Price_Per_Unit FROM Sales;
+
+/* 4. Calculate Total Units Sold */
+SELECT SUM(UnitsSold) AS Total_Units_Sold FROM Sales;
+
+/* 5. Total Sales by Product Category */
 SELECT ProductCategory, SUM(TotalSales) AS Total_Sales
 FROM Sales
 GROUP BY ProductCategory
 ORDER BY Total_Sales DESC;
 /* This query looks to see which product category has the most sales. In this case, Street Footwear has the most sales. */
 
-/* 2. Sale Trends Over Time */
+/* 6. Sale Trends Over Time */
 SELECT DATE_TRUNC('month', InvoiceDate) AS Month, SUM(TotalSales) AS Total_Sales
 FROM Sales
 GROUP BY Month
 ORDER BY Month;
 /* This query looks at the total sales of each month */
 
-/* 3. Top Preforming Region */
+/* 7. Top Performing Region */
 SELECT Region, SUM(TotalSales) AS Total_Sales
 FROM Sales
 GROUP BY Region
 ORDER BY Total_Sales DESC;
-/* Utilisng this query we can see which region had the most sales. The query show that the West had the most sales. */
+/* Utilising this query we can see which region had the most sales. The query show that the West had the most sales. */
 
-/* 4. Sales Preformance by Retailer */
+/* 8. Sales Performance by Retailer */
 SELECT Retailer, SUM(TotalSales) AS Total_Sales
 FROM Sales
 GROUP BY Retailer
 ORDER BY Total_Sales DESC;
-/* This query looks to indentify which retailer sees the most sales. West Gear has the most sales. */
+/* This query looks to identify which retailer sees the most sales. West Gear has the most sales. */
 
-/* 5. Profitability Analysis */
+/* 9. Profitability Analysis */
 SELECT ProductCategory, AVG(OperatingMargin) AS Avg_Operating_Margin
 FROM Sales
 GROUP BY ProductCategory
 ORDER BY Avg_Operating_Margin DESC;
 /* A profitability Analysis query seeks to see the profitability margins of each product category. Street Footwear is the most profitable product category. */
+
+/* 10. Units Sold by Product Category and Gender Type */
+SELECT ProductCategory, GenderType, SUM(UnitsSold) AS Total_Units_Sold
+FROM Sales
+GROUP BY ProductCategory, GenderType
+ORDER BY ProductCategory, GenderType;
