@@ -80,7 +80,7 @@ Clone or download the files and run the scripts on their respective programs.
 
 Conducted queries to find generic information about the sales data such as Total Sales, Total Profit, and Average Price Per Unit.
 
-Other analysis included Sale Trends Over Time, Top Performing Regions, Sales Performance by Retailers, Profitability Analysis etc.
+Other analyses included Sale Trends Over Time, Top Performing Regions, Sales Performance by Retailers, Profitability Analysis etc.
 
 ## Findings
 
