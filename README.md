@@ -3,7 +3,7 @@
 ## Project Overview 
 
 This project focuses on analysing the Adidas sales database to identify key insights to help improve sales performance and operational efficiency. 
-The dataset was acquired from Kaggle 'https://www.kaggle.com/datasets/vishwas199728/adidas-sales-data' and was then cleaned using Juypter Notebook followed by analysis through SQL queries using pgAdmin4.
+The dataset was acquired from Kaggle 'https://www.kaggle.com/datasets/vishwas199728/adidas-sales-data' and was then cleaned using Juypter Notebook followed by analysis through SQL queries using pgAdmin4. Finally, some visualisations were created using matplotlib.pyplot on python to visualise the SQL queries.
 
 ## Contents
 
@@ -12,6 +12,8 @@ The dataset was acquired from Kaggle 'https://www.kaggle.com/datasets/vishwas199
 `Adidas_Sales_Data.sql`: SQL queries file.
 
 `Adidas_Sales_Data.csv` The raw CSV file containing the database acquired from Kaggle.
+
+`Visualisations_Adidas_Sales_Data.py`: python visualising file showcasing a range of different plot types using `matplotlib.pyplot`.
 
 ## Dataset Cleaning
 
@@ -53,7 +55,15 @@ CREATE TABLE Sales (
 );
 ```
 
-Created a sequence `sales_id_seq` in order to import the data from the CSV file after creating a new column 'SalesID' to include a 'PRIMARY KEY'.
+I created a sequence `sales_id_seq` in order to import the data from the CSV file after creating a new column 'SalesID' to include a 'PRIMARY KEY'.
+
+## Data Engineering for Visualisations
+
+- Converted `InvoiceDate` to datetime to facilitate time-based aggregation.
+- Aggregated total sales over time by month.
+- Calculated total sales by product category.
+- Aggregated total sales by region.
+- Different types of plots are used such as line chart, pie chart, and bar chart.
 
 ## How to Use
 
@@ -62,6 +72,7 @@ Before running the scripts, make sure you have the following installed:
 - pandas library for Python
 - PostgreSQL
 - pgAdmin 4 or another SQL client that can run SQL scripts
+- matplotlib.pyplot for Python
 
 Clone or download the files and run the scripts on their respective programs.
 
