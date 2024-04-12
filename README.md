@@ -29,8 +29,9 @@ A database `Adidas_Sales_Data` was created on pgAdmin 4 to conduct the SQL queri
 
 ## SQL Table
 
-Below is the code for the SQL Table 'Sales'
+Below is the code for the SQL Table `Sales`
 
+```
 CREATE SEQUENCE sales_id_seq START WITH 1;
 
 CREATE TABLE Sales (
@@ -50,7 +51,7 @@ CREATE TABLE Sales (
     OperatingMargin NUMERIC,
     SalesMethod VARCHAR(100)
 );
-
+```
 
 Created a sequence `sales_id_seq` in order to import the data from the CSV file after creating a new column 'SalesID' to include a 'PRIMARY KEY'.
 
