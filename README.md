@@ -7,7 +7,7 @@ The dataset was acquired from Kaggle 'https://www.kaggle.com/datasets/vishwas199
 
 ## Contents
 
-`Cleaned_Adidas_Sales_Data.py`: cleaned python file.
+`Cleaned_Adidas_Sales_Data.ipynb`: cleaned python file.
 
 `Adidas_Sales_Data.sql`: SQL queries file.
 
